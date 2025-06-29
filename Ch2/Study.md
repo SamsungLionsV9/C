@@ -1,4 +1,4 @@
-<img width="192" alt="image" src="https://github.com/user-attachments/assets/621d29db-5b3a-4e93-b80a-70859a249c34" />2.1 개념
+2.1 개념
 
 C프로그램의 기본 구조
 
