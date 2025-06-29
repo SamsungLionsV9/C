@@ -1,0 +1,61 @@
+#pragma warning(disable:4996)
+#include <stdio.h>
+
+#define START 0
+#define MOVE 1
+#define WORK 2
+#define STOP 3
+
+int main()
+{
+    int current = START;
+    int input;
+
+    while (1) {
+        switch (current) {
+            case START:
+                printf("로봇 작동중\n");
+                printf("상태 입력 >> ");
+                scanf("%d", &input);
+
+                if (input == 1) {
+                    current = MOVE;
+                } else {
+                    printf("잘못된 입력\n");
+                }
+                break;
+
+            case MOVE:
+                printf("로봇 이동중\n");
+                printf("상태 입력 >> ");
+                scanf("%d", &input);
+
+                if (input == 2) {
+                    current = WORK;
+                } else {
+                    printf("잘못된 입력\n");
+                }
+                break;
+
+            case WORK:
+                printf("로봇 업무중\n");
+                printf("상태 입력 >> ");
+                scanf("%d", &input);
+
+                if (input == 3) {
+                    current = STOP;
+                } else {
+                    printf("잘못된 입력\n");
+                }
+                break;
+
+            case STOP:
+                printf("로봇이 중지되었습니다.\n");
+                return 0;
+
+            default:
+                printf("비정상 종료\n");
+                return 1;
+        }
+    }
+}
