@@ -13,3 +13,8 @@ int main()
 
     return 0;
 }
+
+//비트NOT과 논리NOT의 차이 예시 코드
+//int a = 5;
+//printf("~a = %d\n", ~a);  // -6 (비트 반전)
+//printf("!a = %d\n", !a);  // 0  (논리 반전)
