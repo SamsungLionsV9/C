@@ -11,8 +11,8 @@ int main()
     printf("[%08d]\n", a);      //공백 채움
     printf("[%+08d]\n", a);     //부호 표시, 공백 채움
     
-    char b ='A';
-    double c = 3.14159;
+    char b ='A'; //문자열 변수 b에 A를 대입
+    double c = 3.14159; //실수 double형 변수 c에 소수를 대입
     
     printf("[%c]\n", b);        //문자 출력
     printf("[%8c]\n", b);       //오른쪽 정렬   
