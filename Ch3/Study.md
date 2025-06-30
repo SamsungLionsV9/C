@@ -187,6 +187,10 @@ float c = 5.0 / 3;  // 결과: 1.666...
 int a = 10;
 float b = 3.14;
 float result = a + b;  // 결과: float
+
+float와 int가 메모리 크기가 같음에도 불구하고 float형으로 변환되는 이유는
+float형이 int형보다 정밀한 데이터타입이기 때문이다.
+
 ```
 
 ### 명시적 형 변환 (캐스팅)
