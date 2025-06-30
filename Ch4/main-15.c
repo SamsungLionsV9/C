@@ -8,7 +8,7 @@ int main()
     printf("전구상태(-1 or 1): ");
     scanf("%d", &bulb);
     
-    bulb = ~bulb + 1;
+    bulb = ~bulb + 1; //여기서는 ~(비트 NOT연산)을 해야한다. (2의보수연산)
     printf("전구의 상태: %d\n", bulb);
 
     return 0;
