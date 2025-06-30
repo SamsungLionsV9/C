@@ -209,7 +209,7 @@ int i = (int)f;  // 결과: 2
 3. 다음 코드의 결과:
 
 ```c
-float f = 3.5;
+float f = 3.5f;
 int i = (int)f;
 printf("%d", i); // 결과: 3
 ```
