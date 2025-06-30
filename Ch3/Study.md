@@ -48,6 +48,7 @@ scanf("%d", &number);
 ## 특수 자료형
 
 * `unsigned`: 부호 없이 **0 이상의 정수만 표현**
+  short - 약 6만5천, int, long - 21억, long long - 엄청 큰 수
 * `sizeof`: 변수나 자료형의 크기를 **바이트 단위**로 알려줌
 
 ```c
