@@ -6,7 +6,8 @@ int main()
     char str[10]; //str문자열 변수를 10바이트로 지정(10글자)
     int i;
     float f;
-    
+
+    //scanf일때면 주소 연산자&를 붙힌다. 왜냐하면 메모리에 저장해야하기 때문이다.
     printf("문자를 입력하세요: ");
     scanf("%c", &ch);
     
