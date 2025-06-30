@@ -4,7 +4,7 @@
 int main()
 {   
     int a, b;
-    char op;
+    char op; //연산자를 입력받음(여기서는 +)
     
     printf("두 정수 덧셈(ex 10 + 20): ");
     scanf("%d %c %d", &a, &op, &b);
