@@ -6,7 +6,7 @@ int main()
     int b = 3;
     int result;
     
-    result = a * b + (++a); //이상연산자*, 증가연산자 ++ 사용| 15+6 = 21
+    result = a * b + (++a); //이항연산자*, 증가연산자 ++ 사용| 15+6 = 21
     printf("결과 = %d\n", result);
     printf("%d\n", a);
     
