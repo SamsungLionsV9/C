@@ -3,7 +3,7 @@
 int main()
 {
     char ch;
-    char str[10];
+    char str[10]; //str문자열 변수를 10바이트로 지정(10글자)
     int i;
     float f;
     
