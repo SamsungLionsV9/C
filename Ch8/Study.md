@@ -65,6 +65,7 @@ int other(){
     num = 10;
     char a = 'F'
 }
+
 ---
 3. 지역변수의 선언과 사용
 ---
@@ -76,6 +77,8 @@ int other(int num, char a){
   num =10; //other함수에 정의된 매개변수인 int num, char a(매개변수)들을 변수로 사용하였다.
   a = 'F'
 }
+
+---
 
 int main(){
   int num, res;
