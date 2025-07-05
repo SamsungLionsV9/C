@@ -27,6 +27,7 @@
 ---
 ** 지역변수
 ---
+```c
 특징: 함수 내부에서 선언되는 지역변수는 해당 함수 블록 내에서만 접근이 가능하다.
 예시) int other(void){
       int found = 0;
@@ -37,13 +38,14 @@
       mode = 0;//(mode는 if문 내부에있는 변수이므로 접근이 불가->컴파일 오류 발생)
       found = 100; //found는 같은 other함수 내부에 있기 때문에 접근가능 -> 값이 변경됨
     }
-
+```
 ---
+
 
 ---
 ** 지역변수와 매개변수
 ---
-```
+```c
 1. 변수를 매개변수로 사용하는 경우
 int other(int num, char a){
   if(found == 0){
@@ -55,7 +57,7 @@ int other(int num, char a){
 ```
 ---
 2. 함수 블록 내 일반 변수로 사용하는 경우
-
+```c
 int other(){
   int num;
   char a;
@@ -67,12 +69,12 @@ int other(){
     num = 10;
     char a = 'F'
 }
-
+```
 ---
 3. 지역변수의 선언과 사용
 ---
 -> 변수명이 동일하더라도 선언 위치가 다르면 각각 다른 변수로 인식한다.
-```
+```c
 int other(int num, char a){
   if(found == 0){
     int mode = 2;
@@ -82,7 +84,7 @@ int other(int num, char a){
 }
 ```
 ---
-```
+```c
 int main(){
   int num, res;
   char a;
