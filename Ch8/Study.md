@@ -67,11 +67,12 @@ int other(){
     num = 10;
     char a = 'F'
 }
-```
+
 ---
 3. 지역변수의 선언과 사용
 ---
 -> 변수명이 동일하더라도 선언 위치가 다르면 각각 다른 변수로 인식한다.
+```
 int other(int num, char a){
   if(found == 0){
     int mode = 2;
@@ -81,7 +82,7 @@ int other(int num, char a){
 }
 ```
 ---
-
+```
 int main(){
   int num, res;
   char a;
@@ -91,8 +92,7 @@ int main(){
 
   res = other(num, alp);
 }
-
-
+```
 ---
 ** 지역변수의 지속 시간 **
 ---
