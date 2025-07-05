@@ -177,7 +177,7 @@ int greeting(int value) {
 #### rand()
 
 - `0 ~ RAND_MAX` 범위의 무작위 정수를 반환
-
+--> 일반적으로 32767이 최대값을 나타냄
 #### srand()
 
 - `rand()`의 결과를 제어하기 위한 **시드(seed)** 값을 설정
