@@ -76,7 +76,8 @@ int main(void){
   greeting();     //main함수에서 피호출함수에서 선언된 greeting을 호출한다.
   return 0;       //피호출 함수가 void형태의 매개변수를 수용하므로 greeting 함수에서는 ()처럼 빈 값을 받는다고 본다.
 }
-
+```
+```
 <피호출 함수>
 void greeting(void); 
 {                  //함수를 정의한다.
@@ -88,13 +89,15 @@ void greeting(void);
 
 ```
 ** 매개변수가 있고 반환값이 없는 경우**
+```
 <호출하는 함수>
 int main(void){
   greeting(100);     //main함수에서 피호출함수에서 선언된 greeting을 호출한다. 매개변수는 100이다.
   return 0;       //피호출 함수가 int value에서 매개변수 100을 전달받지만
 }
-
+```
 <피호출 함수>
+```
 void greeting(int value); 
 {                  //함수를 정의한다.
   printf("%d", value);   //여기 있는 greeting함수를 호출하는 main함수가 호출할것이며 반환값이 없다(return문이 없음)
@@ -104,11 +107,13 @@ void greeting(int value);
 
 ** 매개변수가 없고 반환값이 있는 경우**
 <호출하는 함수>
+```
 int main(void){
   int value = 300;     //main함수에서 value이라는 정수의 매개변수를 피호출 함수로 전달한다.
   return 0;       
 }
-
+```
+```
 <피호출 함수>
 int greeting() {                  //함수를 정의한다.
   printf("Hi"); //매개변수가 피호출함수에 인자값으로 존재하지 않아서 전달받지 못한다
