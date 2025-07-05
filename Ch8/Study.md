@@ -39,3 +39,60 @@
     }
 
 ---
+
+---
+** 지역변수와 매개변수
+---
+1. 변수를 매개변수로 사용하는 경우
+int other(int num, char a){
+  if(found == 0){
+    int mode = 2;
+  }
+  num =10; //other함수에 정의된 매개변수인 int num, char a(매개변수)들을 변수로 사용하였다.
+  a = 'F'
+}
+---
+2. 함수 블록 내 일반 변수로 사용하는 경우
+
+int other(){
+  int num;
+  char a;
+
+    if(found == 0){
+      int mode = 2;
+      
+    }
+    num = 10;
+    char a = 'F'
+}
+---
+3. 지역변수의 선언과 사용
+---
+-> 변수명이 동일하더라도 선언 위치가 다르면 각각 다른 변수로 인식한다.
+int other(int num, char a){
+  if(found == 0){
+    int mode = 2;
+  }
+  num =10; //other함수에 정의된 매개변수인 int num, char a(매개변수)들을 변수로 사용하였다.
+  a = 'F'
+}
+
+int main(){
+  int num, res;
+  char a;
+
+  num = 100;    //main함수에서 정의된 num과 char의 값을 '복사'해서 other함수에다가 값을 전달한다는 느낌으로 보면 된다.
+  char = 'F'    //서로 동기화 되는 형태는 아니고 그냥 main함수 -> other함수로 값만 전달된다는 느낌으로 보면 된다.
+
+  res = other(num, alp);
+}
+
+---
+** 지역변수의 지속 시간 **
+---
+
+--> 지역변수가 선언된 블록의 실행이 시작될 때 스택 메모리에 지역변수가 할당된디.(지속시간 = 메모리에 존재하는 시간)
+
+---
+
+
