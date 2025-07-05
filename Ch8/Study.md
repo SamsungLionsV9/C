@@ -43,6 +43,7 @@
 ---
 ** 지역변수와 매개변수
 ---
+```
 1. 변수를 매개변수로 사용하는 경우
 int other(int num, char a){
   if(found == 0){
@@ -51,6 +52,7 @@ int other(int num, char a){
   num =10; //other함수에 정의된 매개변수인 int num, char a(매개변수)들을 변수로 사용하였다.
   a = 'F'
 }
+```
 ---
 2. 함수 블록 내 일반 변수로 사용하는 경우
 
@@ -65,7 +67,7 @@ int other(){
     num = 10;
     char a = 'F'
 }
-
+```
 ---
 3. 지역변수의 선언과 사용
 ---
@@ -77,7 +79,7 @@ int other(int num, char a){
   num =10; //other함수에 정의된 매개변수인 int num, char a(매개변수)들을 변수로 사용하였다.
   a = 'F'
 }
-
+```
 ---
 
 int main(){
@@ -89,6 +91,7 @@ int main(){
 
   res = other(num, alp);
 }
+
 
 ---
 ** 지역변수의 지속 시간 **
