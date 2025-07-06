@@ -14,3 +14,6 @@ int main(){
     
     return 0;
 }
+
+
+//function2함수가 void함수이기 때문에 매개변수 int x, int y가 있어도 반환값이 없는 형태이다.
