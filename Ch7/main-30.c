@@ -18,3 +18,5 @@ int main()
 
     return 0;
 }
+
+//math.h 표준 라이브러리로 수학과 관련된 sin, cos, tan을 사용할 수 있게 된다.
