@@ -139,7 +139,7 @@ double average(int x[]);
     double avg;
     int arr[5] = { 1, 2, 3, 4, 5};
 
-    avg = average{base};
+    avg = average{arr};
     return 0 ;
 }
 
