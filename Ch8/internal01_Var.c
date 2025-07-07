@@ -7,7 +7,7 @@ void printInternalVar(){
 }
 
 void modifyInternalVar(int value){
-    internalVar = value; //value라는 새로운 값을 입력받음 그걸 이제 상단 전역변수의 값으로 수정
+    internalVar = value; //value라는 새로운 값을 받아 internalVal을 수정
 }
 
 /*int main(){
