@@ -23,14 +23,14 @@ void bubbleSortAscending(int arr[], int n){
 
 int main(){
     int arr[] = {7, 4, 5, 1, 3}; //bubblesort함수의 매개변수로 이 배열값을 전달
-    int n = sizeof(arr) / sizeof(arr[0]); //int n은 배열의 크기/배열의 첫번째 요소 이다.
+    int n = sizeof(arr) / sizeof(arr[0]); //int n은 배열의 크기/배열의 첫번째 요소(배열의 전체 요소 개수) 이다.
     
     printf("초기 상태 배열: [");
     for(int i = 0; i < n; i++)
         printf("%d ", arr[i]); //초기상태의 배열을 출력해줌, 배열내부값이 숫자이므로 %d
     printf("]\n");
     
-    bubbleSortAscending(arr, n); //상단에 있는 함수를 호출하여 불러옴
+    bubbleSortAscending(arr, n); //상단에 있는 함수를 호출하여 불러옴(버블정렬을 적용하기 위해 호출)
     
     printf("정렬된 배열: [");
     for(int i = 0; i < n; i++)
