@@ -6,7 +6,7 @@ int main(){
     int i;
     int base[5] = {31, 71, 21, 41, 51};
     printf("%p\n", base);
-    print_square(base); //배열 base의 i번째 요소를 각각 전달/ base는 배열의 주소를 뜻함
+    print_square(base); //배열 base의 i번째 요소를 모두 print_square로 전달/ base는 배열의 주소를 뜻함
     
     for(int i = 0; i < 5; i++){
         printf("%d ", base[i]);
@@ -20,3 +20,5 @@ void print_square(int x[]){
     //printf("%d ", x[i] * x[i]);
     }
 }
+
+//C언어에서는 배열을 함수에 보낼때는 참조를 전달하는것처럼 동작한다.
