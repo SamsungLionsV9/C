@@ -3,7 +3,7 @@
 void function2(int x, int y){
     printf("매개변수가 있고 반환값이 없는 함수\n");
     printf("두 매개변수: %d, %d\n", x, y);
-    printf("반환값 없음: void\n");
+    printf("반환값 없음: void\n"); //void함수여서 반환하는 값이 없음
 }
 
 
