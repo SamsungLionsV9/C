@@ -10,16 +10,16 @@
         return rand() % 6 + 1; 생성된 난수를 6으로 나눈 나머지는 0~5이므로 주사위가 되려면 1을 더한다.
     }
     int getUserGuess(){
-        int guess;
+        int guess; //guess를 출력하기 위해서 선언한 int형의 변수
         printf("주사위를 던져 나올 숫자를 맞혀보세요(1~6): ");
         scanf("%d", &guess); //guess로 사용자가 입력한 수를 변수화하였고, 그 값을 반환하는 형태이다.
     return guess;
 }
 void playGuessingGame() {
-    int userGuess, diceResult;
+    int userGuess, diceResult; //하단에서 출력하기 위한 두 변수 정의
 
     while (1) {     //참인경우(사용자가 입력한 값과 위 유저게스 함수에서 반환한 값이 동일할때)
-        userGuess = getUserGuess();
+        userGuess = getUserGuess(); //변수 = 사용자 입력값(참)
 
         if (userGuess == 0) {    //0을 입력하면 오류로 종료시킴
             printf("게임을 종료합니다.\n");
