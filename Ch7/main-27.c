@@ -8,8 +8,8 @@ int function3(){
     return 42;
 }
 int main(){
-    int result3 = function3();
-    printf("function3의 반환값: %d\n", result3);
+    int result3 = function3(); //function3을 호출해서 나온 return값인 42를 result3에 저장함
+    printf("function3의 반환값: %d\n", result3); //42 출력
 
 
     return 0;
