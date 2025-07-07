@@ -13,6 +13,6 @@ void modifyInternalVar(int value){
 /*int main(){
     printf("main_internalVar: %d\n", internalVar);
     internalVar = 300;
-    printf("main_internalVar: %d\n", internalVar);
+    printf("main_internalVar: %d\n", internalVar); //extern으로 서로 연결된 파일 두개가 있을 시 한개의 main함수는 주석처리를 해야 링커에러가 나지 않는다.
     return 0;
 }*/
