@@ -87,6 +87,8 @@ int arrSize = sizeof(score) / sizeof(score[0]);
 
 int arrByte = arrSize * sizeof(int);
 //arrSize: 배열의 요소 개수 * sizeof(int): 자료형 하나가 차지하는 바이트 수
+
+결론: int arrByte = ((sizeof(score) / sizeof(score[0])) * sizeof(int);
 ```
 
 ---
