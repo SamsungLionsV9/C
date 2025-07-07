@@ -10,7 +10,7 @@ void function2(int x, int y){
 
 int main(){
     int a = 5, b = 7;
-    function2(a, b);
+    function2(a, b); //a, b값을 function2함수의 매개변수로 전달
     
     return 0;
 }
